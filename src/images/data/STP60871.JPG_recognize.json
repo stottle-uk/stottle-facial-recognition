@@ -17,45 +17,15 @@
       "candidates": [
         {
           "subject_id": "Stuart Tottle",
+          "face_id": "5a1362bb137687205690",
+          "confidence": 0.99506,
+          "enrollment_timestamp": "1511219901387"
+        },
+        {
+          "subject_id": "Stuart Tottle",
           "face_id": "5a134eb263c384575422",
           "confidence": 0.99506,
           "enrollment_timestamp": "1511214772599"
-        },
-        {
-          "subject_id": "Stuart Tottle",
-          "face_id": "5a1352e68f90b4294339",
-          "confidence": 0.99506,
-          "enrollment_timestamp": "1511215848801"
-        },
-        {
-          "subject_id": "Stuart Tottle",
-          "face_id": "5a134f149c4ff8261313",
-          "confidence": 0.99506,
-          "enrollment_timestamp": "1511214870768"
-        },
-        {
-          "subject_id": "Stuart Tottle",
-          "face_id": "5a135474ea6fc9206800",
-          "confidence": 0.99506,
-          "enrollment_timestamp": "1511216247073"
-        },
-        {
-          "subject_id": "Stuart Tottle",
-          "face_id": "5a134fe5bb99b5488761",
-          "confidence": 0.99506,
-          "enrollment_timestamp": "1511215079687"
-        },
-        {
-          "subject_id": "Stuart Tottle",
-          "face_id": "5a1350b20f0570421857",
-          "confidence": 0.99506,
-          "enrollment_timestamp": "1511215284254"
-        },
-        {
-          "subject_id": "Stuart Tottle",
-          "face_id": "5a135a94c09265026978",
-          "confidence": 0.99506,
-          "enrollment_timestamp": "1511217814774"
         },
         {
           "subject_id": "Stuart Tottle",
@@ -65,18 +35,48 @@
         },
         {
           "subject_id": "Stuart Tottle",
+          "face_id": "5a1352e68f90b4294339",
+          "confidence": 0.99506,
+          "enrollment_timestamp": "1511215848801"
+        },
+        {
+          "subject_id": "Stuart Tottle",
+          "face_id": "5a13614ba94fe7209486",
+          "confidence": 0.99506,
+          "enrollment_timestamp": "1511219533955"
+        },
+        {
+          "subject_id": "Stuart Tottle",
+          "face_id": "5a134f149c4ff8261313",
+          "confidence": 0.99506,
+          "enrollment_timestamp": "1511214870768"
+        },
+        {
+          "subject_id": "Stuart Tottle",
           "face_id": "5a1351471fbb94924388",
           "confidence": 0.99506,
           "enrollment_timestamp": "1511215433477"
         },
         {
           "subject_id": "Stuart Tottle",
-          "face_id": "5a135169d6c996970654",
+          "face_id": "5a135474ea6fc9206800",
           "confidence": 0.99506,
-          "enrollment_timestamp": "1511215468033"
+          "enrollment_timestamp": "1511216247073"
+        },
+        {
+          "subject_id": "Stuart Tottle",
+          "face_id": "5a13627c5900d7532290",
+          "confidence": 0.99506,
+          "enrollment_timestamp": "1511219838369"
+        },
+        {
+          "subject_id": "Stuart Tottle",
+          "face_id": "5a134fe5bb99b5488761",
+          "confidence": 0.99506,
+          "enrollment_timestamp": "1511215079687"
         }
       ]
     }
   ],
-  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/recognize/MyFirstGallery/301f043203bdc853671f4b9f0dfe93900b35d602_5a135a98eecd03699894.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T224339Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=da95f09494268fb0fc7d95e670dfb658f942ea0f6e39fa797b5655333a6c2766"
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/recognize/MyFirstGallery/301f043203bdc853671f4b9f0dfe93900b35d602_5a136324799bf0675607.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T232006Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=cfc5eee9bc8d8e71faa2ab2e5cb1a0b9256d2598f6ff82a57a13835535e81302"
 }

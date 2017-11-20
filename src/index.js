@@ -8,9 +8,9 @@ const base64Encode = async (file) => {
 
 const getAllFileNamesFromDirectory = async (path) => await fs.readdir(path);
 
-const getKariosInfo = async (url, body) => await rp({
+const getKariosInfo = async (endpoint, body) => await rp({
     method: 'POST',
-    uri: `https://api.kairos.com/${url}`,
+    uri: `https://api.kairos.com/${endpoint}`,
     contentType: 'application/json',
     headers: {
         app_id: '83d919bc',
@@ -20,78 +20,70 @@ const getKariosInfo = async (url, body) => await rp({
     json: true
 });
 
-const enroll = async (imagesBase) => {
-
-    const fileNames = await getAllFileNamesFromDirectory(imagesBase);
-
+const callKarios = async (imagesBaseDirectory, type, getBody) => {
+    const fileNames = await getAllFileNamesFromDirectory(imagesBaseDirectory);
     fileNames
         .filter(p => p.split('.').pop().toLowerCase() === 'jpg')
-        .forEach(async filename => {
-            const imageData = await base64Encode(`${imagesBase}\\${filename}`);
-            const body = { image: imageData, subject_id: 'Stuart Tottle', gallery_name: "MyFirstGallery" };
-            const response = await getKariosInfo('https://api.kairos.com/enroll', body)
-            await fs.writeJson(`${imagesBase}\\data\\${filename}_enroll.json`, response, { spaces: 2 });
-        });
+        .forEach(filename => callKariosInternal(imagesBaseDirectory, filename, type, getBody));
 }
 
-const verify = async (imagesBase) => {
-
-    const fileNames = await getAllFileNamesFromDirectory(imagesBase);
-
-    fileNames
-        .filter(p => p.split('.').pop().toLowerCase() === 'jpg')
-        .forEach(async filename => {
-            const imageData = await base64Encode(`${imagesBase}\\${filename}`);
-            const body = { image: imageData, subject_id: 'Stuart Tottle', gallery_name: "MyFirstGallery" };
-            const response = await getKariosInfo('https://api.kairos.com/verify', body)
-            await fs.writeJson(`${imagesBase}\\data\\${filename}_verify.json`, response, { spaces: 2 });
-        });
-}
-
-const recognize = async (imagesBase) => {
-
-    const fileNames = await getAllFileNamesFromDirectory(imagesBase);
-
-    fileNames
-        .filter(p => p.split('.').pop().toLowerCase() === 'jpg')
-        .forEach(async filename => {
-            const imageData = await base64Encode(`${imagesBase}\\${filename}`);
-            const body = { image: imageData, gallery_name: "MyFirstGallery" };
-            const response = await getKariosInfo('https://api.kairos.com/recognize', body)
-            await fs.writeJson(`${imagesBase}\\data\\${filename}_recognize.json`, response, { spaces: 2 });
-        });
-}
-
-const detect = async (imagesBase, type, getBody) => {
-    const fileNames = await getAllFileNamesFromDirectory(imagesBase);
-    fileNames
-        .filter(p => p.split('.').pop().toLowerCase() === 'jpg')
-        .forEach(filename => doWork(imagesBase, filename, type, getBody));
-}
-
-const doWork = async (imagesBase, filename, type, getBody) => {
-    const imageData = await base64Encode(`${imagesBase}\\${filename}`);
+const callKariosInternal = async (imagesBaseDirectory, filename, type, getBody) => {
+    const imageData = await base64Encode(`${imagesBaseDirectory}\\${filename}`);
     const response = await getKariosInfo(type, getBody(imageData));
-    await fs.writeJson(`${imagesBase}\\data\\${filename}_${type}.json`, response, { spaces: 2 });
+    await fs.writeJson(`${imagesBaseDirectory}\\data\\${filename}_${type}.json`, response, { spaces: 2 });
 }
 
 // use upload ed_image_url to not upload images again
 try {
-    const path = __dirname + "\\images\\";
-    //enroll(path);
-    //verify(path);
-    //recognize(path);
-
-    const body = (imageData) => {
-        return {
-            image: imageData,
-            selector: "ROLL"
-        }
-    };
-
-    detect(path, 'detect', body)
+    const imagesDirectory = __dirname + "\\images\\";
+    enroll(imagesDirectory);
+    verify(imagesDirectory);
+    recognize(imagesDirectory);
+    detect(imagesDirectory);
 } catch (error) {
     console.log(error)
 }
 
+
+function detect(imagesDirectory) {
+    const detectBody = (imageData) => {
+        return {
+            image: imageData,
+            selector: "ROLL"
+        };
+    };
+    callKarios(imagesDirectory, 'detect', detectBody);
+}
+
+function recognize(imagesDirectory) {
+    const recognizeBody = (imageData) => {
+        return {
+            image: imageData,
+            gallery_name: "MyFirstGallery"
+        };
+    };
+    callKarios(imagesDirectory, 'recognize', recognizeBody);
+}
+
+function verify(imagesDirectory) {
+    const verifyBody = (imageData) => {
+        return {
+            image: imageData,
+            subject_id: 'Stuart Tottle',
+            gallery_name: "MyFirstGallery"
+        };
+    };
+    callKarios(imagesDirectory, 'verify', verifyBody);
+}
+
+function enroll(imagesDirectory) {
+    const enrollBody = (imageData) => {
+        return {
+            image: imageData,
+            subject_id: 'Stuart Tottle',
+            gallery_name: "MyFirstGallery"
+        };
+    };
+    callKarios(imagesDirectory, 'enroll', enrollBody);
+}
 
