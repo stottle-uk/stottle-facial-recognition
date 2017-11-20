@@ -1,0 +1,19 @@
+{
+  "images": [
+    {
+      "transaction": {
+        "status": "failure",
+        "topLeftX": 1060,
+        "topLeftY": 1117,
+        "gallery_name": "MyFirstGallery",
+        "eyeDistance": 58,
+        "height": 141,
+        "width": 141,
+        "face_id": 1,
+        "quality": -2.55407,
+        "message": "No match found"
+      }
+    }
+  ],
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/recognize/MyFirstGallery/23f9ab8b274a126339d6590850f136f46218ce3f_5a135a94c6cef8700841.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T224334Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=eea486b1beb98ced002d491dd19ed026a7d1db6f2180307ad50f866874ebbd1a"
+}

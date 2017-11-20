@@ -1,0 +1,81 @@
+{
+  "images": [
+    {
+      "status": "Complete",
+      "width": 2816,
+      "height": 2112,
+      "file": "content_5a135a935032b",
+      "faces": [
+        {
+          "topLeftX": 1484,
+          "topLeftY": 259,
+          "height": 512,
+          "rightEyeCenterY": 385,
+          "rightEyeCenterX": 1621,
+          "pitch": 3,
+          "quality": 0.78508,
+          "confidence": 0.99958,
+          "chinTipX": 1728,
+          "yaw": -2,
+          "chinTipY": 863,
+          "eyeDistance": 229,
+          "width": 512,
+          "leftEyeCenterY": 387,
+          "leftEyeCenterX": 1850,
+          "attributes": {
+            "lips": "Apart",
+            "asian": 0.00095,
+            "gender": {
+              "femaleConfidence": 0.00005,
+              "type": "M",
+              "maleConfidence": 0.99995
+            },
+            "age": 31,
+            "hispanic": 0.01371,
+            "other": 0.00324,
+            "black": 0.00039,
+            "white": 0.98171,
+            "glasses": "None"
+          },
+          "face_id": 1,
+          "roll": 1
+        },
+        {
+          "topLeftX": 984,
+          "topLeftY": 826,
+          "height": 512,
+          "rightEyeCenterY": 966,
+          "rightEyeCenterX": 1120,
+          "pitch": -2,
+          "quality": 0.67961,
+          "confidence": 0.99958,
+          "chinTipX": 1260,
+          "yaw": -20,
+          "chinTipY": 1374,
+          "eyeDistance": 222,
+          "width": 512,
+          "leftEyeCenterY": 958,
+          "leftEyeCenterX": 1341,
+          "attributes": {
+            "lips": "Together",
+            "asian": 0.00006,
+            "gender": {
+              "femaleConfidence": 0.99991,
+              "type": "F",
+              "maleConfidence": 0.00009
+            },
+            "age": 33,
+            "hispanic": 0.00797,
+            "other": 0.00061,
+            "black": 0.00003,
+            "white": 0.99133,
+            "glasses": "None"
+          },
+          "face_id": 2,
+          "roll": -4
+        }
+      ]
+    }
+  ],
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/detect/83d919bc/ac1f236fa499c176c5a525e89ccef1d4630a0a93_5a135a93166813009821.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T224335Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d74d137838c02a35f6d192115833f0beed9e433c7ac8555aed3b5dd0b418634d"
+}

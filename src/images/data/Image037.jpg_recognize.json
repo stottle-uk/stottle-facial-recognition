@@ -1,0 +1,33 @@
+{
+  "images": [
+    {
+      "transaction": {
+        "status": "failure",
+        "topLeftX": 849,
+        "topLeftY": 417,
+        "gallery_name": "MyFirstGallery",
+        "eyeDistance": 43,
+        "height": 109,
+        "width": 109,
+        "face_id": 1,
+        "quality": 0.43369,
+        "message": "No match found"
+      }
+    },
+    {
+      "transaction": {
+        "status": "failure",
+        "topLeftX": 623,
+        "topLeftY": 414,
+        "gallery_name": "MyFirstGallery",
+        "eyeDistance": 44,
+        "height": 108,
+        "width": 108,
+        "face_id": 2,
+        "quality": -0.32808,
+        "message": "No match found"
+      }
+    }
+  ],
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/recognize/MyFirstGallery/062401fa02b44323d990040f7f9f6046a40e98ec_5a135a7c18ef88088174.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T224309Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d2dfea5bf3276ce94b90de8bbacc4481ee00879dd9b76d411e57149b50ecf337"
+}

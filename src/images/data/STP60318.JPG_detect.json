@@ -1,0 +1,47 @@
+{
+  "images": [
+    {
+      "status": "Complete",
+      "width": 2112,
+      "height": 2816,
+      "file": "content_5a135a93979b5",
+      "faces": [
+        {
+          "topLeftX": 844,
+          "topLeftY": 1058,
+          "height": 588,
+          "rightEyeCenterY": 1152,
+          "rightEyeCenterX": 1107,
+          "pitch": -7,
+          "quality": 0.7932,
+          "confidence": 0.99949,
+          "chinTipX": 951,
+          "yaw": -18,
+          "chinTipY": 1639,
+          "eyeDistance": 259,
+          "width": 588,
+          "leftEyeCenterY": 1301,
+          "leftEyeCenterX": 1319,
+          "attributes": {
+            "lips": "Together",
+            "asian": 0.00039,
+            "gender": {
+              "femaleConfidence": 0.00008,
+              "type": "M",
+              "maleConfidence": 0.99992
+            },
+            "age": 22,
+            "hispanic": 0.00269,
+            "other": 0.00131,
+            "black": 0.00039,
+            "white": 0.99522,
+            "glasses": "None"
+          },
+          "face_id": 1,
+          "roll": 62
+        }
+      ]
+    }
+  ],
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/detect/83d919bc/23f9ab8b274a126339d6590850f136f46218ce3f_5a135a935c38d4584747.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T224335Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=7c2d97ee48d9d97a009cf89124c544a30c4b03372a582901f04eeb2427d15e6f"
+}

@@ -1,0 +1,37 @@
+{
+  "face_id": "5a135a946b6a94717676",
+  "images": [
+    {
+      "attributes": {
+        "lips": "Together",
+        "asian": 0.2826,
+        "gender": {
+          "femaleConfidence": 0.47838,
+          "type": "M",
+          "maleConfidence": 0.52162
+        },
+        "age": 32,
+        "hispanic": 0.20476,
+        "other": 0.0151,
+        "black": 0.11321,
+        "white": 0.38433,
+        "glasses": "None"
+      },
+      "transaction": {
+        "status": "success",
+        "topLeftX": 1060,
+        "topLeftY": 1117,
+        "gallery_name": "MyFirstGallery",
+        "timestamp": "1511217814500",
+        "height": 141,
+        "quality": -2.55407,
+        "confidence": 0.98924,
+        "subject_id": "Stuart Tottle",
+        "eyeDistance": 58,
+        "width": 141,
+        "face_id": 1
+      }
+    }
+  ],
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/enroll/Stuart%20Tottle/23f9ab8b274a126339d6590850f136f46218ce3f_5a135a946b6a94717676.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T224334Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=77c27d1bdf13eb4d579344e858c7e8a07452194d904504a45e9643d6f0116c8c"
+}
