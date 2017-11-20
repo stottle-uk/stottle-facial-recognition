@@ -1,8 +1,0 @@
-{
-  "Errors": [
-    {
-      "ErrCode": 5001,
-      "Message": "invalid url was sent"
-    }
-  ]
-}
