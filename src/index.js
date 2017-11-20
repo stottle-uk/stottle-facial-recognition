@@ -1,7 +1,6 @@
 const rp = require('request-promise-native');
 const fs = require('fs-extra');
 
-// function to encode file data to base64 encoded string
 const base64Encode = async (file) => {
     const bitmap = await fs.readFile(file);
     return new Buffer(bitmap).toString('base64');
@@ -11,7 +10,7 @@ const getAllFileNamesFromDirectory = async (path) => await fs.readdir(path);
 
 const getKariosInfo = async (url, body) => await rp({
     method: 'POST',
-    uri: url,
+    uri: `https://api.kairos.com/${url}`,
     contentType: 'application/json',
     headers: {
         app_id: '83d919bc',
@@ -63,27 +62,34 @@ const recognize = async (imagesBase) => {
         });
 }
 
-const detect = async (imagesBase) => {
-
+const detect = async (imagesBase, type, getBody) => {
     const fileNames = await getAllFileNamesFromDirectory(imagesBase);
-
     fileNames
         .filter(p => p.split('.').pop().toLowerCase() === 'jpg')
-        .forEach(async filename => {
-            const imageData = await base64Encode(`${imagesBase}\\${filename}`);
-            const body = { image: imageData, selector: "ROLL" };
-            const response = await getKariosInfo('https://api.kairos.com/detect', body)
-            await fs.writeJson(`${imagesBase}\\data\\${filename}_detect.json`, response, { spaces: 2 });
-        });
+        .forEach(filename => doWork(imagesBase, filename, type, getBody));
+}
+
+const doWork = async (imagesBase, filename, type, getBody) => {
+    const imageData = await base64Encode(`${imagesBase}\\${filename}`);
+    const response = await getKariosInfo(type, getBody(imageData));
+    await fs.writeJson(`${imagesBase}\\data\\${filename}_${type}.json`, response, { spaces: 2 });
 }
 
 // use upload ed_image_url to not upload images again
 try {
     const path = __dirname + "\\images\\";
-    enroll(path);
-    verify(path);
-    recognize(path);
-    detect(path)
+    //enroll(path);
+    //verify(path);
+    //recognize(path);
+
+    const body = (imageData) => {
+        return {
+            image: imageData,
+            selector: "ROLL"
+        }
+    };
+
+    detect(path, 'detect', body)
 } catch (error) {
     console.log(error)
 }
