@@ -1,5 +1,5 @@
 {
-  "face_id": "5a1352e68f90b4294339",
+  "face_id": "5a135474ea6fc9206800",
   "images": [
     {
       "attributes": {
@@ -22,7 +22,7 @@
         "topLeftX": 859,
         "topLeftY": 278,
         "gallery_name": "MyFirstGallery",
-        "timestamp": "1511215848801",
+        "timestamp": "1511216247073",
         "height": 331,
         "quality": -0.07958,
         "confidence": 0.99939,
@@ -33,5 +33,5 @@
       }
     }
   ],
-  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/enroll/Stuart%20Tottle/301f043203bdc853671f4b9f0dfe93900b35d602_5a1352e68f90b4294339.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T221048Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=47a32d67526e54f060fbc779cb93448b9c539c58c3abb298f8fef95423f9fb16"
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/enroll/Stuart%20Tottle/301f043203bdc853671f4b9f0dfe93900b35d602_5a135474ea6fc9206800.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171120T221727Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=a2b08e2944f81c919c29bfbdfd158fdea7c0bd57050936b8663165c1f6320fd6"
 }

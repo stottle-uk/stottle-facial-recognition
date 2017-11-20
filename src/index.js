@@ -20,7 +20,7 @@ const getKariosInfo = async (url, body) => await rp({
     json: true
 });
 
-const go = async (imagesBase) => {
+const enroll = async (imagesBase) => {
 
     const fileNames = await getAllFileNamesFromDirectory(imagesBase);
 
@@ -30,13 +30,31 @@ const go = async (imagesBase) => {
             const imageData = await base64Encode(`${imagesBase}\\${filename}`);
             const body = { image: imageData, subject_id: 'Stuart Tottle', gallery_name: "MyFirstGallery" };
             const response = await getKariosInfo('https://api.kairos.com/enroll', body)
-            await fs.writeJson(`${imagesBase}\\data\\${filename}.json`, response, { spaces: 2 });
+            await fs.writeJson(`${imagesBase}\\data\\${filename}_enroll.json`, response, { spaces: 2 });
         });
 
 }
 
+const verify = async (imagesBase) => {
+    
+        const fileNames = await getAllFileNamesFromDirectory(imagesBase);
+    
+        fileNames
+            .filter(p => p.split('.').pop().toLowerCase() === 'jpg')
+            .forEach(async filename => {
+                const imageData = await base64Encode(`${imagesBase}\\${filename}`);
+                const body = { image: imageData, subject_id: 'Stuart Tottle', gallery_name: "MyFirstGallery" };
+                const response = await getKariosInfo('https://api.kairos.com/verify', body)
+                await fs.writeJson(`${imagesBase}\\data\\${filename}_verify.json`, response, { spaces: 2 });
+            });
+    
+    }
+
 try {
-    go(__dirname + "\\images\\");
+    const path = __dirname + "\\images\\";
+    enroll(path);
+// use uploaded_image_url to not upload images again
+    verify(path)
 } catch (error) {
     console.log(error)
 }
