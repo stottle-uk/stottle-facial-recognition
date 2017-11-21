@@ -1,0 +1,8 @@
+{
+  "Errors": [
+    {
+      "Message": "too many faces in image",
+      "ErrCode": 5010
+    }
+  ]
+}

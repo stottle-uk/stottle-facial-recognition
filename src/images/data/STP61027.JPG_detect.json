@@ -4,7 +4,7 @@
       "status": "Complete",
       "width": 2816,
       "height": 2112,
-      "file": "content_5a147e12c0056",
+      "file": "content_5a14967b6222e",
       "faces": [
         {
           "topLeftX": 1484,
@@ -77,5 +77,5 @@
       ]
     }
   ],
-  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/detect/83d919bc/ac1f236fa499c176c5a525e89ccef1d4630a0a93_5a147e12824076899873.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171121T192718Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=45ab4bcf522c0ee5619d4d887e44cf8747fcf9792a9a2db08811ceff4de14f8f"
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/detect/83d919bc/ac1f236fa499c176c5a525e89ccef1d4630a0a93_5a14967b12e058161130.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171121T211134Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=9dd477e3615b98ee7eca90ac16facd56aaad65bafdb328f61b081fdcc4ec96d9"
 }

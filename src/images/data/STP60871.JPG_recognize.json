@@ -23,6 +23,12 @@
         },
         {
           "subject_id": "Stuart Tottle",
+          "face_id": "5a1496777d48f6961825",
+          "confidence": 0.99506,
+          "enrollment_timestamp": "1511298681696"
+        },
+        {
+          "subject_id": "Stuart Tottle",
           "face_id": "5a134eb263c384575422",
           "confidence": 0.99506,
           "enrollment_timestamp": "1511214772599"
@@ -68,15 +74,9 @@
           "face_id": "5a135474ea6fc9206800",
           "confidence": 0.99506,
           "enrollment_timestamp": "1511216247073"
-        },
-        {
-          "subject_id": "Stuart Tottle",
-          "face_id": "5a13627c5900d7532290",
-          "confidence": 0.99506,
-          "enrollment_timestamp": "1511219838369"
         }
       ]
     }
   ],
-  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/recognize/MyFirstGallery/301f043203bdc853671f4b9f0dfe93900b35d602_5a147e0e7c2477684047.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171121T192712Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=c7ce446d724b11b8685b76b1d68d335e0c565b6a197ba161ab6e353fbe352e43"
+  "uploaded_image_url": "https://kairos-east-id-images.s3.amazonaws.com/prod/83d919bc/recognize/MyFirstGallery/301f043203bdc853671f4b9f0dfe93900b35d602_5a14967ebbc7c4834756.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIFH4MKOH26PPV44Q%2F20171121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171121T211129Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=a8d0f514e1cabbda73a90987c9cf186e234f49d450c1f279492c3a9cec4a7058"
 }
