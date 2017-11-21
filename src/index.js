@@ -7,6 +7,26 @@ const base64Encode = async (file) => {
     return new Buffer(bitmap).toString('base64');
 }
 
+/* 
+person walks in
+picture is taken
+try to recognise person
+if match found
+    save new image under persons name
+    get and save klout score
+    display details to attendent
+
+else
+    ask for name
+    picture is shown to attendent with possible names of person and selects one *or* types in the name
+    save new image under persons name
+    get and save klout score
+    display details to attendent
+
+
+Offer discount to customers if they 'like' facebook page to link photos to social media 
+*/
+
 const getAllFileNamesFromDirectory = async (path) => await fs.readdir(path);
 
 const getKariosInfo = async (endpoint, body) => await rp({
