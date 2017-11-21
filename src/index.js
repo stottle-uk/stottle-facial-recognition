@@ -1,5 +1,6 @@
 const rp = require('request-promise-native');
 const fs = require('fs-extra');
+const config = require('config');
 
 const base64Encode = async (file) => {
     const bitmap = await fs.readFile(file);
@@ -13,8 +14,8 @@ const getKariosInfo = async (endpoint, body) => await rp({
     uri: `https://api.kairos.com/${endpoint}`,
     contentType: 'application/json',
     headers: {
-        app_id: '83d919bc',
-        app_key: '9c32a38c7738cc8f1c86e77b310d24bb'
+        app_id: config.get('Karios.apiId'),
+        app_key: config.get('Karios.apiKey')
     },
     body: body,
     json: true
